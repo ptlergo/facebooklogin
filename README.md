@@ -13,6 +13,12 @@ install bower globally
 npm install -g bower
 ```
 
+##SASS WATCH
+watch for any styling updates
+```
+sass --watch stylesheets
+```
+
 #RUN
 run the app. locally.
 ```
