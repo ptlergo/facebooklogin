@@ -1,0 +1,25 @@
+{
+  "name": "facebooklogin",
+  "description": "frontend components for fb login",
+  "main": "index.js",
+  "authors": [
+    "Patrick Funom Tunga-Lergo"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ptlergo/facebooklogin",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "^1.5.8",
+    "angular-ui-router": "^0.3.2",
+    "angularfire": "^2.1.0",
+    "angular": "^1.5.8",
+    "bootstrap-sass": "^3.3.7"
+  }
+}
