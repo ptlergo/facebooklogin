@@ -1,0 +1,11 @@
+{
+  "name": "facebooklogin",
+  "version": "1.0.0",
+  "description": "facebook login",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patrick Funom Tunga-Lergo",
+  "license": "ISC"
+}
