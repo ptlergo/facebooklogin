@@ -1,21 +1,21 @@
 var myApp = angular.module('myApp', ['ui.router']);
 
 myApp.config(function($stateProvider) {
-  var regState = {
+  const regState = {
     name: 'register',
     url: '/register',
     controller: 'registrationController',
     templateUrl: '../views/register.html'
   }
 
-  var loginState = {
+  const loginState = {
     name: 'login',
     url: '/login',
     controller: 'loginController',
     templateUrl: '../views/login.html'
   }
 
-  var successState = {
+  const successState = {
     name: 'success',
     url: '/success',
     controller: 'successController',

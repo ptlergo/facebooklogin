@@ -1,4 +1,16 @@
 <section>
-  <h3>Login section</h3>
-  <p> {{ message }}</p>
+  <form name="myform">
+    <div class="textintro">
+      <h3>Login section</h3>
+      <p> {{ message }}</p>
+    </div>
+
+    <fieldset>
+      <input type ="email" name="email" placeholder="Email">
+      <input type ="password" name="password" placeholder="Password">
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary">LOGIN</button>
+    <p>or <a ui-sref="register">register </a></p>
+  </form>
 </section>
