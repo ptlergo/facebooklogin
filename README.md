@@ -1,5 +1,5 @@
 # facebooklogin
-User registration and login template for music'em app. uses firebase and angular
+App music'em's registration and login. Using firebase, node, angular, and ui-router. 
 
 #INSTALL
 install all dependencies
@@ -11,12 +11,6 @@ npm install
 install bower globally
 ```
 npm install -g bower
-```
-
-##SASS WATCH
-watch for any styling updates
-```
-sass --watch stylesheets
 ```
 
 #RUN SERVER
