@@ -4,11 +4,14 @@
   "description": "facebook login",
   "main": "index.js",
   "scripts": {
+    "start": "node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Patrick Funom Tunga-Lergo",
   "license": "ISC",
   "dependencies": {
-    "bower": "^1.8.0"
+    "body-parser": "^1.15.2",
+    "bower": "^1.8.0",
+    "express": "^4.14.0"
   }
 }
