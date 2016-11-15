@@ -19,8 +19,8 @@ watch for any styling updates
 sass --watch stylesheets
 ```
 
-#RUN
-run the app. locally.
+#RUN SERVER
+run the app. locally on port 3000.
 ```
 npm start
 ```
