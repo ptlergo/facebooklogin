@@ -1,3 +1,3 @@
 myApp.controller('loginController', ['$scope', function($scope) {
-  $scope.message = 'Youve been logged in!';
+  $scope.message = 'login please!';
 }]);

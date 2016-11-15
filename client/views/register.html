@@ -1,5 +1,18 @@
 <section>
-  <h3>Registration section</h3>
-  <p> {{ message }}</p>
+  <form name="myform" novalidate>
+    <div class="textintro">
+      <h3>REGISTER</h3>
+      <p> {{ message }}</p>
+    </div>
 
+    <fieldset>
+      <input type ="firstname" name="firstname" placeholder="first name">
+      <input type ="lastname" name="lastname" placeholder="last name">
+      <input type ="email" name="email" placeholder="Email">
+      <input type ="password" name="password" placeholder="Password">
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary">REGISTER</button>
+    <p>or <a ui-sref="login">login </a></p>
+  </form>
 </section>
