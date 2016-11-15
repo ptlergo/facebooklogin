@@ -15,6 +15,14 @@ myApp.config(function($stateProvider) {
     templateUrl: '../views/login.html'
   }
 
+  var successState = {
+    name: 'success',
+    url: '/success',
+    controller: 'successController',
+    templateUrl: '../views/success.html'
+  }
+
   $stateProvider.state(regState);
   $stateProvider.state(loginState);
+  $stateProvider.state(successState);
 });
