@@ -12,21 +12,24 @@
     <fieldset>
       <input type ="email" name="email" placeholder="Email"
              ng-model="user.email" ng-required="true">
-      <div role="alert">
-         <span class="error" ng-show="myform.email.$error.required">require email!</span>
-         <span class="error" ng-show="myform.email.$error.email">invalid email!</span>
-         <span class="error alert" ng-show="myform.email.$success.email">correct email!</span>
+      <div class="alert">
+         <span class="alert-info" ng-show="myform.email.$error.required">require email!</span>
+         <span class="alert-danger" ng-show="myform.email.$error.email">invalid email!</span>
+         <span class="alert-success" ng-show="myform.email.$error.success">correct email!</span>
       </div>
 
       <input type ="password" name="password" placeholder="Password"
               ng-model="user.password" ng-required="true">
-      <div role="alert">
-         <span class="error" ng-show="myform.password.$invalid && myform.email.$touched">password required</span>
+      <div class="alert">
+        <span class="alert-info" ng-show="myform.password.$invalid && myform.email.$touched">password required</span>
       </div>
     </fieldset>
 
     <button type="submit" class="btn btn-primary"
-            ng-disabled="myform.$invalid">LOGIN</button>
+            ng-disabled="myform.$invalid">
+            LOGIN
+    </button>
+
     <p>or <a ui-sref="register">register </a></p>
   </form>
 
