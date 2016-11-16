@@ -1,19 +1,19 @@
 var myApp = angular.module('myApp',
   ['ui.router', 'firebase'])
-  .constant('FIREBASE_URL', 'https://facebooklogin-4a1ff.firebaseio.com/');
-
+  .constant('FIREBASE_URL', 'https://facebooklogin-4a1ff.firebaseio.com');
+  
 myApp.config(function($stateProvider) {
   const regState = {
     name: 'register',
     url: '/register',
-    controller: 'RegistrationController',
+    controller: 'registrationController',
     templateUrl: '../views/register.html'
   }
 
   const loginState = {
     name: 'login',
     url: '/login',
-    controller: 'LoginController',
+    controller: 'registrationController',
     templateUrl: '../views/login.html'
   }
 
