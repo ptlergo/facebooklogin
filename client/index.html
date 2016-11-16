@@ -7,22 +7,15 @@
     <link rel="stylesheet" ng-href="stylesheets/scss/app.css">
   </head>
   <body class="container-fluid">
-    <div class="mbody col-md-1 col-md-offset-5">
+    <div class="col-md-6 col-md-offset-4">
       <header>
         <h1>Hello!</h1>
           <a ui-sref="register" ui-sref-active="active">register</a>
           <a ui-sref="login">login</a>
       </header>
+      <div class="clearfix"></div>
+      <ui-view></ui-view>
     </div>
-    <div class="clearfix"></div>
-
-    <ui-view></ui-view>
-
-
-
-
-
-
 
 
 
