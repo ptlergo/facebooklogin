@@ -1,9 +1,10 @@
 <section>
+  <form name="myform"
+        ng-submit="login()"
+        novalidate>
 
-  <h1>Email form is: {{ myform.email.$viewValue }} </h1>
-  <h1>password form is: {{ myform.password.$viewValue }} </h1>
-  <form name="myform" novalidate>
     <div class="textintro">
+      <h1 ng-show="message"> {{ message }}</h1>
       <h3>Login section</h3>
       <p> {{ message }}</p>
     </div>
@@ -28,4 +29,8 @@
             ng-disabled="myform.$invalid">LOGIN</button>
     <p>or <a ui-sref="register">register </a></p>
   </form>
+
+  <i>Email typed is: {{ myform.email.$viewValue }} </i>
+  <br>
+  <i>password typed is: {{ myform.password.$viewValue }} </i>
 </section>

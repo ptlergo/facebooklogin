@@ -1,3 +1,5 @@
 myApp.controller('loginController', ['$scope', function($scope) {
-  $scope.message = 'login please!';
+  $scope.login = function() {
+    $scope.message = "Welcome" + $scope.user.email;
+  };
 }]);

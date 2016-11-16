@@ -1,3 +1,5 @@
 myApp.controller('registrationController', ['$scope', function($scope) {
-  $scope.message = 'register for access!';
+  $scope.login = function() {
+    $scope.message = "Welcome" + $scope.user.email;
+  };
 }]);
