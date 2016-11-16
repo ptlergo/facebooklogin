@@ -6,21 +6,21 @@ myApp.config(function($stateProvider) {
   const regState = {
     name: 'register',
     url: '/register',
-    controller: 'registrationController',
+    controller: 'RegistrationController',
     templateUrl: '../views/register.html'
   }
 
   const loginState = {
     name: 'login',
     url: '/login',
-    controller: 'loginController',
+    controller: 'LoginController',
     templateUrl: '../views/login.html'
   }
 
   const successState = {
     name: 'success',
     url: '/success',
-    controller: 'successController',
+    controller: 'SuccessController',
     templateUrl: '../views/success.html'
   }
 

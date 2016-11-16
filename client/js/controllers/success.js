@@ -1,3 +1,3 @@
-myApp.controller('successController', ['$scope', function($scope) {
+myApp.controller('SuccessController', ['$scope', function($scope) {
   $scope.message = 'SUCCESS!';
 }]);
