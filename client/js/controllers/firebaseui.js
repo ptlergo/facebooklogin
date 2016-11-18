@@ -34,6 +34,4 @@ myApp.controller('firebaseuiController',
     var auth = app.auth();
     var ui = new firebaseui.auth.AuthUI(auth);
     ui.start('#firebaseui-auth-container', uiConfig);
-    var ref = firebase.database().ref();
-    
 }]);

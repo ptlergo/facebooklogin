@@ -12,15 +12,28 @@ myApp.controller('registrationController',
     firebase.initializeApp(config);
     var ref = firebase.database().ref();
     var auth = $firebaseAuth(firebase.auth());
+    var database = firebase.database();
 
+
+    // Login function
     $scope.login = function() {
       $scope.message = "You're logged in under email: " + $scope.user.email;
 
     };
 
+    // Register function
     $scope.register = function() {
       auth.$createUserWithEmailAndPassword($scope.user.email, $scope.user.password
       ).then(function(regUser) {
+        var userObj = {
+          date: firebase.database.ServerValue.TIMESTAMP,
+          email: $scope.user.email,
+          firstname: $scope.user.firstname,
+          lastname: $scope.user.lastname,
+        };
+        console.log(userObj);
+
+
         $scope.message = "Hello " + $scope.user.firstname +
         ", thank you for registering";
 
