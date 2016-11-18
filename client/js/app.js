@@ -1,7 +1,7 @@
 var myApp = angular.module('myApp',
   ['ui.router', 'firebase'])
   .constant('FIREBASE_URL', 'https://facebooklogin-4a1ff.firebaseio.com');
-  
+
 myApp.config(function($stateProvider) {
   const regState = {
     name: 'register',
@@ -17,6 +17,13 @@ myApp.config(function($stateProvider) {
     templateUrl: '../views/login.html'
   }
 
+  const firebaseState = {
+    name: 'firebaseui',
+    url: '/firebaseui',
+    controller: 'firebaseuiController',
+    templateUrl: '../views/firebaseui.html'
+  }
+
   const successState = {
     name: 'success',
     url: '/success',
@@ -25,6 +32,7 @@ myApp.config(function($stateProvider) {
   }
 
   $stateProvider.state(regState);
+  $stateProvider.state(firebaseState);
   $stateProvider.state(loginState);
   $stateProvider.state(successState);
 });
