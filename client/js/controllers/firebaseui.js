@@ -11,23 +11,33 @@ myApp.controller('firebaseuiController',
     };
 
     var uiConfig = {
+        'signInFlow': 'popup',
         'signInSuccessUrl': '#/success',
         'signInOptions': [
-          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-          firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-          firebase.auth.EmailAuthProvider.PROVIDER_ID
+          { provider: firebase.auth.GoogleAuthProvider.PROVIDER_ID,},
+          { provider: firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+            scopes :[
+              'public_profile',
+              'email',
+              'user_likes',
+              'user_friends'
+            ]
+          },
+          { provider: firebase.auth.EmailAuthProvider.PROVIDER_ID, },
         ],
-        // Terms of service url.
-        'tosUrl': '#/register',
+
         'callbacks': {
-          'signInSuccess': function(currentUser, credential, redirectUrl) {
-            // Do something.
-            // Return type determines whether we continue the redirect automatically
-            // or whether we leave that to developer to handle.
-            console.log('success');
-            return true;
-        }
-      }
+          // Called when the user has been successfully signed in.
+          'signInSuccess': function(user, credential, redirectUrl) {
+            handleSignedInUser(user);
+            // Do not redirect.
+            return false;
+          }
+        },
+      };
+
+    var signInWithPopup = function() {
+      window.open('/widget', 'Sign In', 'width=985,height=735');
     };
 
     var app = firebase.initializeApp(configC);
