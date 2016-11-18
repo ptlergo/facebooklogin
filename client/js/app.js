@@ -13,7 +13,7 @@ myApp.config(function($stateProvider) {
   const loginState = {
     name: 'login',
     url: '/login',
-    controller: 'registrationController',
+    controller: 'loginController',
     templateUrl: '../views/login.html'
   }
 

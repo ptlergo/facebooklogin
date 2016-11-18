@@ -2,7 +2,7 @@ myApp.controller('firebaseuiController',
   ['$scope', '$firebaseAuth',
   function($scope, $firebaseAuth) {
     // Initialize Firebase
-    var config = {
+    var configC = {
       apiKey: "AIzaSyAw0vo20GbssVKhraKrkdQgwV2oALGjNDk",
       authDomain: "facebooklogin-4a1ff.firebaseapp.com",
       databaseURL: "https://facebooklogin-4a1ff.firebaseio.com",
@@ -30,7 +30,7 @@ myApp.controller('firebaseuiController',
       }
     };
 
-    var app = firebase.initializeApp(config);
+    var app = firebase.initializeApp(configC);
     var auth = app.auth();
     var ui = new firebaseui.auth.AuthUI(auth);
     ui.start('#firebaseui-auth-container', uiConfig);

@@ -1,7 +1,7 @@
 myApp.controller('registrationController',
   ['$scope', '$firebaseAuth',
   function($scope, $firebaseAuth) {
-    var config = {
+    var configA = {
       apiKey: "AIzaSyAw0vo20GbssVKhraKrkdQgwV2oALGjNDk",
       authDomain: "facebooklogin-4a1ff.firebaseapp.com",
       databaseURL: "https://facebooklogin-4a1ff.firebaseio.com",
@@ -9,7 +9,7 @@ myApp.controller('registrationController',
       messagingSenderId: "998356488921"
     };
 
-    firebase.initializeApp(config);
+    firebase.initializeApp(configA);
     var ref = firebase.database().ref();
     var auth = $firebaseAuth(firebase.auth());
     var database = firebase.database();
