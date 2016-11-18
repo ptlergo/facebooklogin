@@ -35,4 +35,10 @@
   <i>Email typed is: {{ myform.email.$viewValue }} </i>
   <br>
   <i>password typed is: {{ myform.password.$viewValue }} </i>
+  <div id="firebaseui-auth-container">firebutt</div>
+
+  <form ng-submit="fblogin()">
+    <button class="btn">Facebook Login</button>
+    <h1 ng-show="message">{{ message }}</h1>
+  </form>
 </section>
